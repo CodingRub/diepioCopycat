@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shoot</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js" type="module"></script>
+</head>
+<style>
+    body {
+        display: flex; 
+        flex-direction: row; 
+        justify-content: space-around;
+    }
+
+    .container {
+        background-color: gray; 
+        border: 5px solid rgb(142, 192, 91);
+        padding: 20px 30px;
+    }
+
+    .element {
+        display: flex; 
+        flex-direction: column;
+        margin: 20px 0;
+        border: 2px solid black;
+    }
+
+    .info {
+        display: flex; 
+        flex-direction:row; 
+        justify-content: space-between;
+    }
+
+    .value {
+        font-size: 0.8rem;
+    }
+
+    a {
+        border: 1px solid black;
+        border-radius: 50%;
+        width: 20px;
+        height: 20px;
+        text-align: center;
+        background-color: rgb(142, 192, 91);
+        cursor: pointer;
+    }
+</style>
+<body>
+    <div class="container">
+        <h1>Score: </h1>
+        <div class="level">
+            <h2>Level 1</h2>
+            <h3>Skills Points: 0</h3>
+        </div>
+        <div class="element">
+            <label>Bullet Damage:</label>
+            <div class="info">
+                <span id="lvl1">Lvl 0</span>
+                <a id="1">+</a>
+            </div>
+            <span class="value" id="value1">0</span>
+        </div>
+        <div class="element">
+            <label>Bullet Speed:</label>
+            <div class="info">
+                <span id="lvl2">Lvl 0</span>
+                <a id="2">+</a>
+            </div>
+            <span class="value" id="value2">0</span>
+        </div>
+        <div class="element">
+            <label>Max Life:</label>
+            <div class="info">
+                <span id="lvl3">Lvl 0</span>
+                <a id="3">+</a>
+            </div>
+            <span class="value" id="value3">0</span>
+        </div>
+        <div class="element">
+            <label>Regen Life:</label>
+            <div class="info">
+                <span id="lvl4">Lvl 0</span>
+                <a id="4">+</a>
+            </div>
+            <span class="value" id="value4">0</span>
+        </div>
+    </div>
+    <div class="canvas-container">
+        <canvas style="border: 2px solid black; margin: 20px;"></canvas>
+    </div>
+</body>
+</html>

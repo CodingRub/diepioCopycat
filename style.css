@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    flex-direction: row; 
+    justify-content: center;
+    align-items: center;
+    background-color: #b4b3b3;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    background-color: gray; 
+    border: 5px solid rgb(142, 192, 91);
+    padding: 20px 30px;
+}
+
+.element {
+    display: flex; 
+    flex-direction: column;
+    margin: 20px 0;
+    border: 2px solid black;
+}
+
+.info {
+    display: flex; 
+    flex-direction:row; 
+    justify-content: space-between;
+}
+
+.value {
+    font-size: 0.8rem;
+}
+
+h1, h2, h3 {
+    margin: 0;
+}
+
+
+.level {
+    display: flex;
+    flex-direction: row;
+    font-size: 1.2rem;
+    justify-content: space-between;
+}
+
+h2, h3 {
+    font-size: 1.1rem;
+    padding: 0 20px 0 0;
+}
+
+a {
+    border: 1px solid black;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    background-color: rgb(142, 192, 91);
+    cursor: pointer;
+}
+
+.canvas-container {
+    position: relative;
+}
+
+button {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    height: 50px;
+    background-color: yellowgreen;
+    border: 2px solid rgb(102, 102, 102);
+    border-radius: 10px;
+    font-size: 20px;
+    letter-spacing: 2px;
+}
